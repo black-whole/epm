@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	   <title>GSS EPM</title>
+	   <!-- order of scripts and stylesheets for ui-bootstrap: Angularjs, Angular-animate, Angular-touch, Bootstrap CSS, then ui-bootstrap -->
+	   <link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.css">
+       <link rel="stylesheet" href="node_modules/angular-widget-grid/angular-widget-grid.css">
+
+	   <script type="text/javascript" src="node_modules/angular/angular.js"></script>
+	   <script type="text/javascript" src="node_modules/angular-animate/angular-animate.js"></script>
+	   <script type="text/javascript" src="node_modules/angular-touch/angular-touch.js"></script>
+	   <script type="text/javascript" src="node_modules/angular-ui-bootstrap/dist/ui-bootstrap-tpls.js"></script>
+       <script type="text/javascript" src="node_modules/angular-route/angular-route.js"></script>
+        <script type="text/javascript" src="node_modules/angular-widget-grid/angular-widget-grid.min.js"></script>
+        <!-- <script type="text/javascript" src="node_modules/angular-widget-grid/angular-widget-grid.min.js"></script> -->
+
+	   <script type="text/javascript" src="app.js"></script>
+       <script type="text/javascript" src="app/components/main-header/mainHeader.js"></script>
+       <script type="text/javascript" src="app/components/main-footer/mainFooter.js"></script>
+       <script type="text/javascript" src="app/components/logo/logo.js"></script>
+       <script type="text/javascript" src="app/components/widget/widget.js"></script>
+       <script type="text/javascript" src="app/components/login/login.js"></script>
+       <script type="text/javascript" src="app/components/login/userFactory.js"></script>
+       <!-- <script type="text/javascript" src="app/views/view.js"></script> -->
+       <!-- <script type="text/javascript" src="app/views/login-view/login.js"></script> -->
+
+       <link rel="stylesheet" type="text/css" href="app.css">
+       <!-- <link rel="stylesheet" type="text/css" href="app/components/mainHeader/mainHeader.css"> -->
+    </head>
+
+    <body ng-app="app">
+
+        <div class="main-wrap" style="min-height:700px; width:100%;">
+            <div class="main" style="min-height:700px; width:100%;">
+                <div class="container container--main" style="min-height:700px; width:100%;">
+                    <div class="panel-group" style="min-height:700px; width:100%;">
+                        <div class="panel panel-default mainWrapper" style="min-height:700px; width:100%;">
+                            <div class="panel panel-primary" style="min-height:700px; width:100%;">
+                                <div class="panel-heading"></div>
+                                    <div class="panel-body">
+                                        <!-- <div class="mainBody"> -->
+                                            <main ng-view></main>
+                                        <!-- </div> -->
+                                    </div>
+                                <div class="panel-foorter"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>
+
+<!-- download this music
+
+1. Galantis - Peanut Butter Jelly (Official Video)
+
+2. Kevin Gates - 2 Phones (Official Video)
+
+3. Future - Low Life ft. The Weeknd
+
+ -->
+
+ <!-- <epm-main-header></epm-main-header>
+                    <div class="mainBody">
+                        <main ng-view></main>
+                    </div> -->
+<!-- <epm-main-footer></epm-main-footer> -->

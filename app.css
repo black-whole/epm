@@ -1,0 +1,66 @@
+.mainHeader {
+	height: 40px;
+	background-color: whitesmoke;
+}
+
+.mainFooter {
+	height: 40px;
+	background-color: whitesmoke;
+}
+
+.mainBody {
+	margin: 5px;
+	background-color: whitesmoke;
+}
+
+.mainLogo {
+	margin: 5px;
+	height: 40px;
+	width: 40%;
+	float: left;
+	background-color: transparent;
+}
+
+.profile {
+	margin: 5px;
+	height: 40px;
+	width: 40%;
+	float: right;
+	background-color: transparent;
+}
+
+.LoginWidget {
+	border-radius: 1px;
+	/*border-radius: 1px;*/
+    min-width: 400px;
+    padding: 15% 15% 15% 15%;
+}
+
+.panel.panel-default.widget {
+    border-radius: 1px;
+}
+
+.panel.panel-default {
+    border-radius: 1px;
+}
+
+.mainWrapper {
+	min-width: 700px;
+}
+
+/*.panel.panel-default {
+	border-radius: 1px;
+    min-height: 700px;
+    width: 100%;
+    min-width: 700px;
+}*/
+
+/*.widget {
+	border-radius: 1px;
+    min-width: 400px;
+    padding: 15% 15% 15% 15%;
+}*/
+
+/*.LoginWidgetWrapper {
+    
+}*/
