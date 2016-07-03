@@ -15,7 +15,17 @@ module.exports = function(config) {
 
     // list of files / patterns to load in the browser
     files: [
-      'tests/*.test.js'
+        'node_modules/angular/angular.js',
+        'node_modules/angular-route/angular-route.js',
+        'node_modules/angular-animate/angular-animate.js',
+        'node_modules/angular-touch/angular-touch.js',
+        'node_modules/angular-ui-bootstrap/dist/ui-bootstrap-tpls.js',
+        'node_modules/angular-widget-grid/angular-widget-grid.min.js',
+        'node_modules/angular-mocks/angular-mocks.js',
+        'app.js',
+        'app/services/rotationService.js',
+        'app/services/loginService.js',
+        'tests/*.test.js'
     ],
 
 

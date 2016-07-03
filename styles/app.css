@@ -1,0 +1,299 @@
+.title {
+  width: 100%;
+  height: 23px;
+  background-color: #d5dad5;
+  border-style: solid;
+  border-width: thin;
+  border-color: lightgray;
+  position: inherit;
+  margin-top: -3px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-bottom: 2%;
+  line-height: 23px;
+  padding: 0 2%; }
+
+.mainHeader {
+  height: 50px;
+  /*min-width: 396px;*/
+  border-style: solid;
+  background-color: white;
+  border-width: thin;
+  border-color: lightgray;
+  margin: 1px;
+  display: flex;
+  justify-content: space-around; }
+
+.nav {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+  height: 15px;
+  background-color: #d5dad5;
+  border-style: solid;
+  border-width: thin;
+  border-color: lightgrey; }
+
+.rotation {
+  border-style: solid;
+  background-color: white;
+  border-width: thin;
+  border-color: lightgray; }
+
+.wgWidgetDiv {
+  background-color: transparent;
+  /* height: 97%; */
+  margin: 2%;
+  width: 42%;
+  height: 49%;
+  border-style: solid;
+  border-width: 1px;
+  border-color: lightgray;
+  background: white; }
+
+.gradDashGrid {
+  /*width: 45vw;*/
+  width: 80vh;
+  /*height: 45vw;*/
+  margin: auto;
+  margin-top: 20px;
+  position: relative; }
+
+.rotation {
+  	/*position: relative;
+      margin: auto;*/ }
+
+.boxShadow {
+  box-shadow: 0px 0px 5px #ccc; }
+
+.img-box-shadow {
+  /*box-shadow: 0px 0px 20px #ccc;*/ }
+
+.img-highlight {
+  /*box-shadow: 0px 0px 20px blue;*/
+  box-shadow: 0px 0px 1px black; }
+
+.rotation-block-highlight {
+  box-shadow: 0px 0px 7px gray;
+  border-color: lightgray; }
+
+.login {
+  margin: 50px;
+  margin-left: 25%;
+  margin-right: 25%;
+  padding: 30px;
+  background-color: white;
+  border-style: solid;
+  border-width: thin;
+  border-color: lightgray;
+  /*min-width: 320px;*/ }
+
+.main-dash {
+  width: 50%;
+  height: 100%; }
+
+.grad-dash-main {
+  width: 109%;
+  height: 94%;
+  margin: 20px 5px 0px 10px;
+  position: relative;
+  border-style: solid;
+  border-width: 1px;
+  border-color: lightgray;
+  /* background: whitesmoke; */
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center; }
+
+.side-dash {
+  width: 35%;
+  height: 100%; }
+
+.grad-dash-side {
+  width: 95%;
+  height: 94%;
+  margin: 20px 10px 0px 5px;
+  position: relative;
+  border-style: solid;
+  border-width: 1px;
+  border-color: lightgray;
+  /* background: whitesmoke; */
+  /* flex-grow: 3; */ }
+
+.rotationHeader {
+  height: 100%;
+  width: 100%;
+  background-color: cornflowerblue;
+  font-family: 'Montserrat', sans-serif;
+  text-align: -webkit-center;
+  font-size: xx-large;
+  color: white;
+  /*flex-grow: 1;*/ }
+
+.profileSpan {
+  float: right;
+  /*background-color: antiquewhite;*/
+  margin: 5px;
+  width: 30%;
+  height: 80%; }
+
+.img-circle {
+  border-radius: 50%; }
+
+.nameSpan {
+  color: gray;
+  font-size: smaller;
+  position: relative;
+  margin: 10%; }
+
+.rotation-number {
+  position: static;
+  width: 100%;
+  height: 100%;
+  font-size: 115px;
+  /* color: #ccc; */
+  text-align: center;
+  opacity: 0.2; }
+
+.rotation-number-bold {
+  /*color: cornflowerblue;*/
+  /*background-color: #ccc;*/
+  opacity: 0.3; }
+
+.main-dash-container {
+  width: 100%;
+  height: 84%;
+  background: transparent;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: flex-start; }
+
+/*.mainFooter {
+	height: 40px;
+	background-color: whitesmoke;
+}
+
+.mainBody {
+	margin: 5px;
+	background-color: whitesmoke;
+}
+
+.mainLogo {
+	margin: 5px;
+	height: 40px;
+	width: 40%;
+	float: left;
+	background-color: transparent;
+}
+
+.profile {
+	margin: 5px;
+	height: 40px;
+	width: 40%;
+	float: right;
+	background-color: transparent;
+}*/
+.main-wrap {
+  height: 100%;
+  width: 100%; }
+
+.main-wrap.main.mainGroup.container.container--main {
+  min-height: 700px;
+  width: 100%;
+  height: 100%; }
+
+.container.container--main {
+  /*height: 100vh;*/ }
+
+.LoginWidget {
+  border-radius: 1px;
+  /*border-radius: 1px;*/
+  /*min-width: 400px;*/
+  padding: 18% 15% 15% 15%; }
+
+.gradDashWidget {
+  border-radius: 1px;
+  /*border-radius: 1px;*/
+  min-width: 400px; }
+
+.strech {
+  width: 100%;
+  height: 100%; }
+
+.login-screen {
+  width: 100%;
+  height: 100%;
+  /*background-color: whitesmoke;*/
+  border-style: solid;
+  border-color: lightgray;
+  border-width: 1px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center; }
+
+.grad-screen {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  border-style: solid;
+  border-color: lightgray;
+  border-width: 1px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around; }
+
+.panel-body.wiget {
+  /*background-color: white;
+  border-style: solid;
+  border-width: thin;
+  border-color: lightgray;*/ }
+
+.grad-screen-container {
+  width: 100%;
+  height: 100%;
+  border-style: solid;
+  border-color: lightgray;
+  border-width: 1px; }
+
+.panel.panel-default {
+  /*border-radius: 1px;*/ }
+
+.mainWrapper {
+  /*min-width: 700px;*/ }
+
+main {
+  height: 100%;
+  margin: 1px 1px; }
+
+body {
+  /*background-color: whitesmoke;*/
+  height: 49vw;
+  width: 90vw;
+  min-width: 320px;
+  margin: auto; }
+
+.mainGroup {
+  /*height:90vh;*/
+  /*background-color: whitesmoke;*/ }
+
+/*#body {
+	background-color: whitesmoke;
+}*/
+/*.panel.panel-default {
+	border-radius: 1px;
+    min-height: 700px;
+    width: 100%;
+    min-width: 700px;
+}*/
+/*.widget {
+	border-radius: 1px;
+    min-width: 400px;
+    padding: 15% 15% 15% 15%;
+}*/
+/*.LoginWidgetWrapper {
+    
+}*/
+
+/*# sourceMappingURL=app.css.map */

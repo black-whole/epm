@@ -4,19 +4,16 @@
   app.config(['$routeProvider', function($routeProvider){
     $routeProvider
     .when('/login', {
-      templateUrl: 'app/screens/login-screen/loginScreen.html',
+      templateUrl: 'app/screens/login-screen/loginScreen.html'
     })
     .when('/graduate', {
-      templateUrl: 'graduateView',
-      controller: 'graduateController'
+      templateUrl: 'app/screens/graduate-screen/graduateScreen.html'
     })
     .when('/manager', {
-      templateUrl: 'managerView',
-      controller: 'managerController',
+      templateUrl: 'app/screens/manager-screen/managerScreen.html'
     })
     .when('/admin', {
-      templateUrl: 'adminView',
-      controller: 'adminController'
+      templateUrl: '#'
     })
     .otherwise({
       redirectTo: '/login'

@@ -1,2 +1,13 @@
-<div class="mainProfile">
+<div class="profile" >
+	<span class="photoSpan" ng-mouseenter="hover(true)" ng-mouseleave="hover(false)">
+		<img class="img-circle img-box-shadow" ng-class="{'img-highlight':hovered}" src="{{profile.photo}}">
+	</span>
+	<span>
+		<span class="nameSpan">
+			{{profile.name}}
+		</span>
+		<span class="managerProfileSpan">
+			
+		</span>
+	</span>
 </div>

@@ -1,0 +1,13 @@
+npm
+
+npm install chai@^3.5.0 --save-dev
+npm install chai-as-promised@^5.3.0 --save-dev
+npm install cucumber@^1.0.0 --save-dev
+npm install gulp-protractor@^2.4.0 --save-dev
+npm install protractor@^3.3.0 --save-dev
+npm install protractor-cucumber-framework@^0.6.0 --save-dev
+
+jspm
+
+jspm install npm:npm@^3.9.6
+jspm install npm:text@0.1.0

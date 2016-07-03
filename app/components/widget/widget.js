@@ -6,6 +6,8 @@
 			transclude: true,
 			templateUrl: 'app/components/widget/widget.html',
 			scope: {
+				width: '@',
+				height: '@',
 				widgetHeadingContent: '@',
 				widgetFooterContent: '@'
 			},

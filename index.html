@@ -12,6 +12,7 @@
 	   <script type="text/javascript" src="node_modules/angular-ui-bootstrap/dist/ui-bootstrap-tpls.js"></script>
        <script type="text/javascript" src="node_modules/angular-route/angular-route.js"></script>
         <script type="text/javascript" src="node_modules/angular-widget-grid/angular-widget-grid.min.js"></script>
+        <script type="text/javascript" src="node_modules/material-design-lite/material.js"></script>
         <!-- <script type="text/javascript" src="node_modules/angular-widget-grid/angular-widget-grid.min.js"></script> -->
 
 	   <script type="text/javascript" src="app.js"></script>
@@ -21,50 +22,43 @@
        <script type="text/javascript" src="app/components/widget/widget.js"></script>
        <script type="text/javascript" src="app/components/login/login.js"></script>
        <script type="text/javascript" src="app/components/login/userFactory.js"></script>
-       <!-- <script type="text/javascript" src="app/views/view.js"></script> -->
-       <!-- <script type="text/javascript" src="app/views/login-view/login.js"></script> -->
+       <script type="text/javascript" src="app/components/grad-dash-main/gradDashMain.js"></script>
+       <script type="text/javascript" src="app/components/grad-dash-side/gradDashSide.js"></script>
+       <script type="text/javascript" src="app/components/rotation/rotation.js"></script>
+       <script type="text/javascript" src="app/components/profile/profile.js"></script>
 
-       <link rel="stylesheet" type="text/css" href="app.css">
+       <script type="text/javascript" src="app/services/rotationService.js"></script>
+       <script type="text/javascript" src="app/services/userAccountsService.js"></script>
+
+       <link rel="stylesheet" type="text/css" href="styles/app.css">
+       <!-- <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'> -->
+
+       <link rel="stylesheet" type="text/css" href="styles/desktop.css" media="(min-width: 2560px)">
+       <link rel="stylesheet" type="text/css" href="styles/desktop-wide.css" media="(width >= 1440px)">
+       <link rel="stylesheet" type="text/css" href="styles/desktop-narrow.css" media="(width >= 1024px)">
+       <link rel="stylesheet" type="text/css" href="styles/tablet.css" media="(width >= 768px)">
+       
+       <link rel="stylesheet" type="text/css" href="styles/mobile.css" media="(max-width: 425px)">
+       <!-- <link rel="stylesheet" type="text/css" href="styles/mobile.css" media="(max-width 320px)"> -->
        <!-- <link rel="stylesheet" type="text/css" href="app/components/mainHeader/mainHeader.css"> -->
+
+       <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+       <link rel="stylesheet" type="text/css" href="node_modules/material-design-lite/material.css"> -->
+       <!-- <script type="text/javascript" src="node_modules/material-design-lite/material.js"></script> -->
     </head>
 
     <body ng-app="app">
 
-        <div class="main-wrap" style="min-height:700px; width:100%;">
-            <div class="main" style="min-height:700px; width:100%;">
-                <div class="container container--main" style="min-height:700px; width:100%;">
-                    <div class="panel-group" style="min-height:700px; width:100%;">
-                        <div class="panel panel-default mainWrapper" style="min-height:700px; width:100%;">
-                            <div class="panel panel-primary" style="min-height:700px; width:100%;">
-                                <div class="panel-heading"></div>
-                                    <div class="panel-body">
-                                        <!-- <div class="mainBody"> -->
-                                            <main ng-view></main>
-                                        <!-- </div> -->
-                                    </div>
-                                <div class="panel-foorter"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="main-wrap">
+
+            <epm-main-header>
+              <div class="profileSpan">
+                <epm-profile></epm-profile>
+              </div>
+            </epm-main-header>
+            <div class="nav"></div>
+            <main ng-view></main>
         </div>
 
     </body>
 </html>
-
-<!-- download this music
-
-1. Galantis - Peanut Butter Jelly (Official Video)
-
-2. Kevin Gates - 2 Phones (Official Video)
-
-3. Future - Low Life ft. The Weeknd
-
- -->
-
- <!-- <epm-main-header></epm-main-header>
-                    <div class="mainBody">
-                        <main ng-view></main>
-                    </div> -->
-<!-- <epm-main-footer></epm-main-footer> -->
