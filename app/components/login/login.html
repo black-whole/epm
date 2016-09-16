@@ -1,18 +1,33 @@
-<div class="login boxShadow" ng-keyup="$event.keyCode == 13 && login()">
-	<!-- <div class="boxShadow"> -->
-		<!-- <epm-widget widgetHeadingContent="Login" widgetFooterContent="forgot password"> -->
-		<!-- <div class="loginInputsDiv"> -->
-			<div class="form-group" style="">
-				<input type="text" class="form-control" placeHolder="username" ng-model="$ctrl.user.username">
-			</div>
-			<div class="form-group">
-				<input type="password" class="form-control" placeHolder="password" ng-model="$ctrl.user.password">
-			</div>
-			<div class="form-group">
-				<input type="button" class="btn btn-sm btn-default" value="login" ng-click="$ctrl.login()">
-				<input type="button" class="btn btn-sm btn-default" value="cancel">
-			</div>
-		<!-- </div> -->
-		<!-- </epm-widget> -->
-	<!-- </div> -->
+<div class="grad-dash" style="display: flex; justify-content: center;">
+<div class="rotation" style="width: 850px; height: 500px; background-color: #092f48;">
+  <div style="border-top: 50px; display: flex; justify-content: space-between; align-items: center; width: 100%; height: 100px; background-color: transparent; display: flex; align-items: center; font-size: xx-large;">
+    <div style="color: white; display: flex; justify-content: space-between; align-items: center; font-size: xx-large; padding: 0 20px; width: 50px;">
+      <icon class="material-icons" style="font-size: xx-large; padding: 0 20px;"></icon>
+    </div>
+    <div style="color: rgb(145, 231, 242); flex-grow: 1; display: flex; justify-content: center; align-items: center; font-size: xx-large; padding: 0 20px; width: 50px;">
+      <span>LOGIN</span>
+    </div>
+    <div style="color: white; display: flex; justify-content: space-between; align-items: center; font-size: xx-large; padding: 0 20px; width: 50px;">
+      <icon class="material-icons" style="font-size: xx-large; padding: 0 20px;"></icon>
+    </div>
+  </div>
+
+
+<div style="display: flex; flex-direction: column; justify-content: space-between; align-items: flex-start; width: 100%; height: 300px; background-color: transparent; display: flex; align-items: center; font-size: xx-large;">
+  
+  <!-- <form> -->
+      <div class="mdl-textfield mdl-js-textfield" style="padding-left: 70px; color: white; width: inherit;">
+        <input class="mdl-textfield__input" type="text" id="sample1" style="font-size: xx-large; outline: none; color: white;" placeholder="username" ng-model="$ctrl.user.username">
+      </div>
+
+      <div class="mdl-textfield mdl-js-textfield" style="padding-left: 70px; width: inherit;">
+        <input type="password" class="mdl-textfield__input" type="text" id="sample1" style="font-size: xx-large; outline: none; color: white;" placeholder="password" ng-model="$ctrl.user.password">
+      </div>
+        <div style="color: white; display: flex; justify-content: center; align-items: center; height: 130px;    width: 20%; font-size: xx-large; background-color: rgb(32, 144, 44); border-radius: 50px;" ng-click="$ctrl.login()">
+          login
+      </div>
+    <!-- </form> -->
+</div>
+  
+</div>
 </div>

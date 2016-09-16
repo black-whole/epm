@@ -1,64 +1,31 @@
 <!DOCTYPE html>
 <html>
 	<head>
-	   <title>GSS EPM</title>
-	   <!-- order of scripts and stylesheets for ui-bootstrap: Angularjs, Angular-animate, Angular-touch, Bootstrap CSS, then ui-bootstrap -->
-	   <link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.css">
-       <link rel="stylesheet" href="node_modules/angular-widget-grid/angular-widget-grid.css">
+    <style type="text/css">
+      div{
+        height: 100%;
+        width: 100%;
+      }
+    </style>
 
-	   <script type="text/javascript" src="node_modules/angular/angular.js"></script>
-	   <script type="text/javascript" src="node_modules/angular-animate/angular-animate.js"></script>
-	   <script type="text/javascript" src="node_modules/angular-touch/angular-touch.js"></script>
-	   <script type="text/javascript" src="node_modules/angular-ui-bootstrap/dist/ui-bootstrap-tpls.js"></script>
-       <script type="text/javascript" src="node_modules/angular-route/angular-route.js"></script>
-        <script type="text/javascript" src="node_modules/angular-widget-grid/angular-widget-grid.min.js"></script>
-        <script type="text/javascript" src="node_modules/material-design-lite/material.js"></script>
-        <!-- <script type="text/javascript" src="node_modules/angular-widget-grid/angular-widget-grid.min.js"></script> -->
-
-	   <script type="text/javascript" src="app.js"></script>
-       <script type="text/javascript" src="app/components/main-header/mainHeader.js"></script>
-       <script type="text/javascript" src="app/components/main-footer/mainFooter.js"></script>
-       <script type="text/javascript" src="app/components/logo/logo.js"></script>
-       <script type="text/javascript" src="app/components/widget/widget.js"></script>
-       <script type="text/javascript" src="app/components/login/login.js"></script>
-       <script type="text/javascript" src="app/components/login/userFactory.js"></script>
-       <script type="text/javascript" src="app/components/grad-dash-main/gradDashMain.js"></script>
-       <script type="text/javascript" src="app/components/grad-dash-side/gradDashSide.js"></script>
-       <script type="text/javascript" src="app/components/rotation/rotation.js"></script>
-       <script type="text/javascript" src="app/components/profile/profile.js"></script>
-
-       <script type="text/javascript" src="app/services/rotationService.js"></script>
-       <script type="text/javascript" src="app/services/userAccountsService.js"></script>
-
-       <link rel="stylesheet" type="text/css" href="styles/app.css">
-       <!-- <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'> -->
-
-       <link rel="stylesheet" type="text/css" href="styles/desktop.css" media="(min-width: 2560px)">
-       <link rel="stylesheet" type="text/css" href="styles/desktop-wide.css" media="(width >= 1440px)">
-       <link rel="stylesheet" type="text/css" href="styles/desktop-narrow.css" media="(width >= 1024px)">
-       <link rel="stylesheet" type="text/css" href="styles/tablet.css" media="(width >= 768px)">
-       
-       <link rel="stylesheet" type="text/css" href="styles/mobile.css" media="(max-width: 425px)">
-       <!-- <link rel="stylesheet" type="text/css" href="styles/mobile.css" media="(max-width 320px)"> -->
-       <!-- <link rel="stylesheet" type="text/css" href="app/components/mainHeader/mainHeader.css"> -->
-
-       <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-       <link rel="stylesheet" type="text/css" href="node_modules/material-design-lite/material.css"> -->
-       <!-- <script type="text/javascript" src="node_modules/material-design-lite/material.js"></script> -->
-    </head>
-
-    <body ng-app="app">
-
-        <div class="main-wrap">
-
-            <epm-main-header>
-              <div class="profileSpan">
-                <epm-profile></epm-profile>
-              </div>
-            </epm-main-header>
-            <div class="nav"></div>
-            <main ng-view></main>
-        </div>
-
-    </body>
+    <title>Collaborative Growth Academy</title>
+    <link rel="stylesheet" type="text/css" href="node_modules/angular-widget-grid/angular-widget-grid.css">
+    <script type="text/javascript" src="node_modules/jquery/dist/jquery.js"></script>
+    <script type="text/javascript" src="node_modules/systemjs/dist/system.js"></script>
+    <script type="text/javascript" src="node_modules/angular/angular.js"></script>
+    <script type="text/javascript" src="node_modules/angular-route/angular-route.js"></script>
+    <script type="text/javascript" src="loader.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+<!--     <script type="text/javascript" src"node_modules/material-design-lite.material.js"></script> -->
+<!--     <link rel="stylesheet" href="node_modules/material-design-lite/material.css"></link> -->
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.2.0/material.indigo-pink.min.css">
+    <script defer src="https://code.getmdl.io/1.2.0/material.min.js"></script>
+  </head>
+  <body style="font-family: sans-serif; width: 100vw; height: 100vh; background-color: rgb(7, 38, 59);">
+    <div class="body" ng-app="app" style="background-color: rgb(7, 38, 59); width: 100%; height: 90%;     padding: 60px 0;">
+      <div class="main" ng-view ></div>
+    </div> 
+  </body>
 </html>

@@ -1,3 +1,14 @@
-<div class="rotation">
-	<div class="rotation-number" ng-class="{'rotation-number-bold':hovered4}">{{rotation}}</div>
+<div class="rotation" style="width: 100%; height: 500px; background-color: #092f48;">
+	<div ng-click="selectRotation()" style="display: flex; justify-content: space-between; align-items: center; width: 100%; height: 100px; background-color: {{headerColor}}; display: flex; align-items: center; font-size: xx-large;">
+		<div style="color: white; display: flex; justify-content: space-between; align-items: center; font-size: xx-large; padding: 0 20px; width: 50px;">
+			<icon class="material-icons" style="font-size: xx-large; padding: 0 20px;"></icon>
+		</div>
+		<div style="color: white; flex-grow: 1; display: flex; justify-content: center; align-items: center; font-size: xx-large; padding: 0 20px; width: 50px;">
+			<span>{{title}}</span>
+		</div>
+		<div style="color: white; display: flex; justify-content: space-between; align-items: center; font-size: xx-large; padding: 0 20px; width: 50px;">
+			<icon class="material-icons" style="font-size: xx-large; padding: 0 20px;"></icon>
+		</div>
+	</div>
+	<div></div>
 </div>

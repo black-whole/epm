@@ -1,116 +1,59 @@
-<div class="grad-dash-main">
+<div class="grad-dash-main" style="display: flex; justify-content: center; flex-wrap: wrap;">
+<div style="width:850px; height:101%;">
+	<wg-grid rows="43" columns="1" style="width: 100%; height: 2000px; position: relative;">
 
+		<wg-widget position="{top: 1, left: 1, width: 1, height: 10}">
+			<epm-rotation on="true" rotation="1"></epm-rotation>
+		</wg-widget>
 
+		<wg-widget position="{top: 12, left: 1, width: 1, height: 10}">
+			<epm-rotation on="false" rotation="2"></epm-rotation>
+		</wg-widget>
 
-<div class="main-dash-container" ng-show="dash.rotation == 0">
-	<div class="title">Select Roation</div>
-	<div class="wgWidgetDiv boxShadow" ng-mouseenter="hover1(true)" ng-mouseleave="hover1(false)" ng-class="{'rotation-block-highlight':hovered1}" ng-click="activate(1)">
-	</div>
+		<wg-widget position="{top: 23, left: 1, width: 1, height: 10}">
+			<epm-rotation on="false" rotation="3"></epm-rotation>
+		</wg-widget>
 
-	<div class="wgWidgetDiv boxShadow" ng-mouseenter="hover2(true)" ng-mouseleave="hover2(false)" ng-class="{'rotation-block-highlight':hovered2}" ng-click="activate(2)">
-	</div>
-
-	<div class="wgWidgetDiv boxShadow" ng-mouseenter="hover4(true)" ng-mouseleave="hover4(false)" ng-class="{'rotation-block-highlight':hovered4}" ng-click="activate(4)">
-	</div>
-
-	<div class="wgWidgetDiv boxShadow" ng-mouseenter="hover3(true)" ng-mouseleave="hover3(false)" ng-class="{'rotation-block-highlight':hovered3}" ng-click="activate(3)">
-	</div>
-	
+		<wg-widget position="{top: 34, left: 1, width: 1, height: 10}">
+			<epm-rotation on="false" rotation="4"></epm-rotation>
+		</wg-widget>
+	</wg-grid>
 </div>
 
-<div>
-	<div class="left-dash boxShadow" ng-show="dash.rotation == 1">
-		<epm-widget width="100%" height="100%">
-			<epm-rotation rotation="dash.rotation"></epm-rotation>
-		</epm-widget>
-	</div>
+<!-- <div style="height: 2000px; width: 850px;">
+	<wg-grid rows="43" columns="1" style="width: 850px; height: 2000px;">
+	<wg-widget position="{top: 1, left: 1, width: 1, height: 10}">
+		<epm-rotation></epm-rotation>
+	</wg-grid>
+</div> -->
 
-	<div class="left-dash boxShadow" ng-show="dash.rotation == 2">
-		<epm-widget width="100%" height="100%">
-			<epm-rotation rotation="dash.rotation"></epm-rotation>
-		</epm-widget>
-	</div>
-
-	<div class="left-dash boxShadow" ng-show="dash.rotation == 3">
-		<epm-widget width="100%" height="100%">
-			<epm-rotation rotation="dash.rotation"></epm-rotation>
-		</epm-widget>
-	</div>
-
-	<div class="left-dash boxShadow" ng-show="dash.rotation == 4">
-		<epm-widget width="100%" height="100%">
-			<epm-rotation rotation="dash.rotation"></epm-rotation>
-		</epm-widget>
-	</div>
-</div>
-
-<!-- 	<div class="left-dash" ng-show="dash.rotation == 0">	
-		<wg-grid rows="2" columns="2" class="gradDashGrid">
-			<wg-widget position="{top: 1, left: 1, height: 1, width: 1}">
-				<div class="wgWidgetDiv boxShadow" ng-mouseenter="hover1(true)" ng-mouseleave="hover1(false)" ng-class="{'rotation-block-highlight':hovered1}" ng-click="activate(1)">
-					<epm-widget width="100%" height="100%" >
-						<div style="position: relative;">
-							<div class="rotation-number" ng-class="{'rotation-number-bold':hovered1}">1</div>
-						</div>
-					</epm-widget>
+	<!-- <div style="width:640px; height: 650px; background-color: #f8f8f8;">
+			<div style="height: 20px; display: flex; justify-content: center; align-items: center; color: #0000cc; font-size: large; margin-top: 20px;">Select Rotation</div>
+		<wg-grid class="dashboard-grid" columns="27" rows="27" style="width: 640px; height: 600px; position: relative;">
+			<wg-widget position="{top: 3, height: 12, left: 2, width: 12}" style="background-color: #0000cc;" ng-click="$ctrl.selectRotation(1)">
+				<div style="color: white; padding: 10px; display: flex; justify-content: flex-end; align-items: flex-end; height: 92%; width: 92%;">
+					<span style="font-size: 20px">rotation</span>
+					<span style="font-size: 90px; line-height: 70px;">1</span>
 				</div>
 			</wg-widget>
-
-			<wg-widget position="{top: 1, left: 2, height: 1, width: 1}">
-				<div class="wgWidgetDiv boxShadow" ng-mouseenter="hover2(true)" ng-mouseleave="hover2(false)" ng-class="{'rotation-block-highlight':hovered2}" ng-click="activate(2)">
-					<epm-widget width="100%" height="100%">
-					<div style="position: relative;">
-							<div class="rotation-number" ng-class="{'rotation-number-bold':hovered2}">2</div>
-						</div>
-					</epm-widget>
+			<wg-widget position="{top: 3, height: 12, left: 15, width: 12}" style="background-color: #0000cc;" ng-click="$ctrl.selectRotation(2)">
+				<div style="color: white; padding: 10px; display: flex; justify-content: flex-end; align-items: flex-end; height: 92%; width: 92%;">
+					<span style="font-size: 20px">rotation</span>
+					<span style="font-size: 90px; line-height: 70px;">2</span>
 				</div>
-
-			</wg-widget>
-
-			<wg-widget position="{top: 2, left: 2, height: 1, width: 1}">
-				<div class="wgWidgetDiv boxShadow" ng-mouseenter="hover3(true)" ng-mouseleave="hover3(false)" ng-class="{'rotation-block-highlight':hovered3}" ng-click="activate(3)">
-					<epm-widget width="100%" height="100%">
-						<div style="position: relative;">
-							<div class="rotation-number"ng-class="{'rotation-number-bold':hovered3}" >3</div>
-						</div>
-					</epm-widget>
+			</wg-widget>	
+			<wg-widget position="{top: 16, height: 12, left: 15, width: 12}" style="background-color: #0000cc;" ng-click="$ctrl.selectRotation(3)">
+				<div style="color: white; padding: 10px; display: flex; justify-content: flex-end; align-items: flex-end; height: 92%; width: 92%;">
+					<span style="font-size: 20px">rotation</span>
+					<span style="font-size: 90px; line-height: 70px;">3</span>
 				</div>
 			</wg-widget>
-
-			<wg-widget position="{top: 2, left: 1, height: 1, width: 1}">
-				<div class="wgWidgetDiv boxShadow" ng-mouseenter="hover4(true)" ng-mouseleave="hover4(false)" ng-class="{'rotation-block-highlight':hovered4}" ng-click="activate(4)">
-					<epm-widget width="100%" height="100%">
-						<div style="position: relative;">
-							<div class="rotation-number" ng-class="{'rotation-number-bold':hovered4}">4</div>
-						</div>
-					</epm-widget>
+			<wg-widget position="{top: 16, height: 12, left: 2, width: 12}" style="background-color: #0000cc;" ng-click="$ctrl.selectRotation(4)">
+				<div style="color: white; padding: 10px; display: flex; justify-content: flex-end; align-items: flex-end; height: 92%; width: 92%;">
+					<span style="font-size: 20px">rotation</span>
+					<span style="font-size: 90px; line-height: 70px;">4</span>
 				</div>
 			</wg-widget>
 		</wg-grid>
-	</div>
-
-
-	<div class="left-dash boxShadow" ng-show="dash.rotation == 1">
-		<epm-widget width="100%" height="100%">
-			<epm-rotation rotation="dash.rotation"></epm-rotation>
-		</epm-widget>
-	</div>
-
-	<div class="left-dash boxShadow" ng-show="dash.rotation == 2">
-		<epm-widget width="100%" height="100%">
-			<epm-rotation rotation="dash.rotation"></epm-rotation>
-		</epm-widget>
-	</div>
-
-	<div class="left-dash boxShadow" ng-show="dash.rotation == 3">
-		<epm-widget width="100%" height="100%">
-			<epm-rotation rotation="dash.rotation"></epm-rotation>
-		</epm-widget>
-	</div>
-
-	<div class="left-dash boxShadow" ng-show="dash.rotation == 4">
-		<epm-widget width="100%" height="100%">
-			<epm-rotation rotation="dash.rotation"></epm-rotation>
-		</epm-widget>
 	</div> -->
 </div>

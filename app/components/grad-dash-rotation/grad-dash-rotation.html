@@ -1,0 +1,207 @@
+<div class="grad-dash-rotation" style="display: flex; justify-content: center; flex-wrap: wrap;">
+<div style="width:850px;">
+    <wg-grid rows="10" columns="1" style="width: 100%; height: 100%; position: relative;">
+        <wg-widget position="{top: 1, left: 1, width: 1, height: 10}">
+            <div class="rotation" style="width: 100%; height: 100%; background-color: #092f48;">
+                <div style="display: flex; justify-content: space-between; align-items: center; width: 100%; height: 100px; background-color: rgb(32, 144, 44); display: flex; align-items: center; font-size: xx-large;">
+                    <div style="color: white; display: flex; justify-content: space-between; align-items: center; font-size: xx-large; padding: 0 20px; width: 50px;">
+                        <icon class="material-icons" style="font-size: xx-large; padding: 0 20px;"></icon>
+                    </div>
+                    <div style="color: white; flex-grow: 1; display: flex; justify-content: center; align-items: center; font-size: xx-large; padding: 0 20px; width: 50px;">
+                        <span>{{title}}</span>
+                    </div>
+                    <div style="color: white; display: flex; justify-content: space-between; align-items: center; font-size: xx-large; padding: 0 20px; width: 50px;">
+                        <icon class="material-icons" style="font-size: xx-large; padding: 0 20px;"></icon>
+                    </div>
+                </div>
+
+                <div id="managerAndareaDetails" style="width:100%; height: 1200px;">
+                    <wg-grid rows="24" columns="1" style=" position: relative; height: 100%; width: 100%;">
+                        <wg-widget position="{top: 1, left: 1, width: 1, height: 10}">
+                            
+                            <div style="padding: 0 40px">
+                            <div style="display: flex; justify-content: space-between; align-items: center; width: 82%; height: 100px; display: flex; align-items: center; font-size: xx-large;">
+                                <div style="color: rgb(145, 231, 242); flex-grow: 1; display: flex; justify-content: flex-start; align-items: center; font-size: xx-large; padding: 0 20px; width: 50px;">
+                                    <span>{{"Who is your manager?"}}</span>
+                                </div>
+                                <div style="color: white; display: flex; justify-content: space-between; align-items: center; font-size: xx-large; padding: 0 20px; width: 50px;">
+                                    <icon class="material-icons" style="font-size: xx-large; padding: 0 20px;"></icon>
+                                </div>
+                                </div>
+                                <div style="height: 75%; display:flex; align-items: center; overflow-y: auto;">
+                                    <ul class="mdl-list" style="height: 100%; width: 95%;">
+                                        <li class="mdl-list__item" ng-repeat="manager in managers" ng-click="selectManager(manager)">
+                                            <span id="{{manager.id + 'Span'}}" class="mdl-list__item-primary-content" style="color: rgb(126, 149, 152); font-size: xx-large;">
+                                                <i class="material-icons"></i>
+                                                <span style="width: 20px;"></span>
+                                                {{manager.name + ' ' + manager.surname}}
+                                            </span>
+                                            <span class="mdl-list__item-secondary-action" style="width: 30%; color: rgb(126, 149, 152); font-size: xx-large;">
+                                                <i id="{{manager.id}}" class="material-icons"></i>
+                                            </span>
+                                        </li>                           
+                                    </ul>
+                                </div>
+                            </div>
+                        </wg-widget>
+                        <wg-widget position="{top: 11, left: 1, width: 1, height: 10}">
+                            <div style="padding: 0 40px">
+                            <div style="display: flex; justify-content: space-between; align-items: center; width: 82%; height: 100px; display: flex; align-items: center; font-size: xx-large;">
+
+                                <div style="color: rgb(145, 231, 242); flex-grow: 1; display: flex; justify-content: flex-start; align-items: center; font-size: xx-large; padding: 0 20px; width: 50px;">
+                                    <span>{{"For which rotation area?"}}</span>
+                                </div>
+                                <div style="color: white; display: flex; justify-content: space-between; align-items: center; font-size: xx-large; padding: 0 20px; width: 50px;">
+                                    <icon class="material-icons" style="font-size: xx-large; padding: 0 20px;"></icon>
+                                </div>
+                            </div>
+
+                            <div style="height: 75%; display:flex; align-items: center; overflow-y: auto;">
+                                    <ul class="mdl-list" style="height: 100%; width: 95%;">
+                                        <li class="mdl-list__item" ng-repeat="area in areas" ng-click="selectArea(area)">
+                                            <span class="mdl-list__item-primary-content" style="color: rgb(126, 149, 152); font-size: xx-large;">
+                                                <i class="material-icons"></i>
+                                                <span style="width: 20px;"></span>
+                                                {{area.name}}
+                                            </span>
+                                            <span class="mdl-list__item-secondary-action" style="width: 30%; color: rgb(126, 149, 152); font-size: xx-large;">
+                                                <i id="{{area.id}}" class="material-icons"></i>
+                                            </span>
+                                        </li>                           
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </wg-widget>
+                        <wg-widget position="{top: 21, left: 1, width: 1, height: 10}">
+                            <div style="color: white; display: flex; justify-content: center; align-items: center;">
+                            <div style="color: white; display: flex; justify-content: center; align-items: center; height: 44px;    width: 20%; font-size: xx-large; background-color: rgb(32, 144, 44); border-radius: 50px;" ng-click="next('renderGoalSetting')">
+                                next
+                            </div>
+                            </div>
+                        </wg-widget>
+                        
+                    </wg-grid>
+                </div>
+
+                <div class="ng-hide" id="goalDetails" style="width:100%; height: 1200px;">
+                    <wg-grid rows="24" columns="1" style=" position: relative; height: 100%; width: 100%;">
+                        <wg-widget position="{top: 1, left: 1, width: 1, height: 20}">
+                            
+                            <div style="padding: 0 40px">
+                            <div style="display: flex; justify-content: space-between; align-items: center; width: 82%; height: 100px; display: flex; align-items: center; font-size: xx-large;">
+                                <div style="color: rgb(145, 231, 242); flex-grow: 1; display: flex; justify-content: flex-start; align-items: center; font-size: xx-large; padding: 0 20px; width: 50px;">
+                                    <span>{{"What goals are you working towards?"}}</span>
+                                </div>
+                                <div style="color: white; display: flex; justify-content: center; align-items: center; height: 44px;    width: 44px; font-size: xx-large; background-color: rgb(32, 144, 44); border-radius: 50px;" ng-click="newGoal()"><icon class="material-icons" style="font-size: xx-large; padding: 0 20px;">add</icon>
+                                </div>
+                            </div>
+
+
+
+
+
+                            <div style="width: 100%; height: 100%; overflow-y: auto;">
+                                <div ng-repeat="goal in goals" class="rotation" style="padding: 40px 20px; margin-bottom: 20px; width: 86%; height: 340px; background-color: #1e3b4e;">
+                                    <div style="height: 35%; display: flex; justify-content: center; align-items: center;">
+                                        <div style="width: 20%; height: 35%;">
+                                            <span style="font-size: xx-large; color: rgb(145, 231, 242); ">Goal</span>
+                                        </div>
+                                        <div style="width: 100%;" class="mdl-textfield mdl-js-textfield">
+                                            <textarea ng-model="goal.goal" style="color: rgb(126, 149, 152); font-size: x-large;" class="mdl-textfield__input" type="text" rows= "3" id="sample5" ></textarea>
+<!--                                             <label class="mdl-textfield__label" for="sample5">Text lines...</label>
+ -->                                        </div>
+                                    </div>
+
+                                    <div style="height: 35%; display: flex; justify-content: center; align-items: center; ">
+                                        <div style="width: 20%; height: 35%;">
+                                            <span style="font-size: xx-large; color: rgb(145, 231, 242); ">KPI</span>
+                                        </div>
+                                        <div style="width: 100%;" class="mdl-textfield mdl-js-textfield">
+                                            <textarea ng-model="goal.kpi" style="color: rgb(126, 149, 152); font-size: x-large;" class="mdl-textfield__input" type="text" rows= "3" id="sample5" ></textarea>
+<!--                                             <label class="mdl-textfield__label" for="sample5">Text lines...</label>
+ -->                                        </div>
+                                    </div>
+
+                                    <div style="height: 35%; display: flex; justify-content: center; align-items: center;">
+                                        <div style="width: 20%; height: 35%;">
+                                            <span style="font-size: xx-large; color: rgb(145, 231, 242); ">Target</span>
+                                        </div>
+                                        <div style="width: 100%;" class="mdl-textfield mdl-js-textfield">
+                                            <textarea ng-model="goal.target" style="color: rgb(126, 149, 152); font-size: x-large;" class="mdl-textfield__input" type="text" rows= "3" id="sample5" ></textarea>
+<!--                                             <label class="mdl-textfield__label" for="sample5">Text lines...</label>
+ -->                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                            </div>
+                        </wg-widget>
+                        <wg-widget position="{top: 21, left: 1, width: 1, height: 10}">
+                            <div style="color: white; display: flex; justify-content: center; align-items: center;">
+                            <div id="doneButton" style="color: white; display: flex; justify-content: center; align-items: center; height: 44px;    width: 20%; font-size: xx-large; background-color: rgb(32, 144, 44); border-radius: 50px;" ng-click="done()">
+                                done
+                            </div>
+                            </div>
+                        </wg-widget>
+                    </wg-grid>
+                </div>
+            </div>
+        </wg-widget>
+    </wg-grid>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div>
+    <div style="height: 65px; background-color: #1bcba1;"></div>
+    <div style="background-color: whitesmoke; display: flex; justify-content: center; border: 10px;">   
+        <div style="width: 925px; height: 470px; background-color: whitesmoke;">
+            <wg-grid columns="32" rows="18" style="width: 925px; height: 470px; background-color: whitesmoke;" options="{showGrid: true}">
+                <wg-widget position="{top: 2, left: 1, height: 2, width: 32}" style="background-color: #1bcba1; color: white; font-size: 25px;">
+                    <div style="display: flex; justify-content: flex-start; align-items: center; padding: 20px;">
+                        <span style="text-align: right;">Self-review 1</span>
+                    </div>
+                </wg-widget>
+                <wg-widget position="{top: 5, left: 1, height: 10, width: 10}" style="background-color: #1bcba1; color: white; font-size: 25px;">
+                    <div style="display: flex; justify-content: flex-end; align-items: flex-end; padding: 20px;">
+                        <span style="text-align: right;">view goals</span>
+                    </div>
+                </wg-widget>
+                <wg-widget position="{top: 5, left: 12, height: 10, width: 10}" style="background-color: #1bcba1; color: white; font-size: 25px;">
+                    <div style="display: flex; justify-content: flex-end; align-items: flex-end; padding: 20px;">
+                        <span style="text-align: right;">view job accountabilities</span>
+                    </div>
+                </wg-widget>
+                <wg-widget position="{top: 5, left: 23, height: 10, width: 10}" style="background-color: #1bcba1; color: white; font-size: 25px;">
+                    <div style="display: flex; justify-content: flex-end; align-items: flex-end; padding: 20px;">
+                        <span style="text-align: right;">view behavioural requirements</span>
+                    </div>
+                </wg-widget>
+            </wg-grid>
+        </div>
+    </div>
+</div> -->
